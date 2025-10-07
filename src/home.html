@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+
+{% block title %}Home - STATE CO-OPERATIVE UNION, KERALA{% endblock %}
+
+{% block head %}
+    <style>
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 64, 128, 0.8), rgba(0, 64, 128, 0.8)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .hero h2 {
+            margin-top: 0;
+            font-size: 2.5rem;
+        }
+
+        .hero-button {
+            background-color: #28a745;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .hero-button:hover {
+            background-color: #218838;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #004080;
+        }
+
+        /* Cards */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .chairman-card-content {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+        }
+
+        .chairman-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1.5rem;
+        }
+        
+        /* News Ticker */
+        .news-ticker {
+            background-color: #17a2b8;
+            color: white;
+            padding: 0.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="news-ticker">
+            <marquee><strong>Latest News:</strong> HDC&BM 2025-2026 FINAL LIST PUBLISHED | Training to Co-operative employees | Training conducted via training centers in all districts | HDC &BM 2025-2026 FINAL LIST PUBLISHED | EXAM RESULTS 2025</marquee>
+        </div>
+
+        <section class="hero">
+            <h2>ONLINE APPLICATION FORM FOR ADMISSION TO HDC &BM COURSE 2025-2026</h2>
+            <p>The cooperative movement in the erstwhile Travancore and Cochin states which are the parts in the prsent state of Kerala, originated as a result of initiative taken by Sir.P.Rajagopalachari, the then Diwaan of the pricely state of Travancore.</p>
+            <a href="#" class="hero-button">Apply Now</a>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Our Activities</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="Cooperative Education">
+                    <div class="card-content">
+                        <h3>Cooperative Education</h3>
+                        <p>Any type of organization succeeds if its base is strong. Co-operative are institution came into existence for helping their members through self help and mutual help...</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="Cooperative Training">
+                    <div class="card-content">
+                        <h3>Cooperative Training</h3>
+                        <p>The Kerala State Cooperative Union has the distinction of the first organization to start cooperative training in the country and it continued to develop cooperative traininginstitutions...</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="Publication">
+                     <div class="card-content">
+                        <h3>Publicity, Propaganda & Publication</h3>
+                        <p>State Cooperative Union is publishing an Anglo-Malayalam monthly called "Kerala Cooperative Journal".Its circulation is about 10000 copies throughout the state...</p>
+                    </div>
+                </div>
+                 <div class="card">
+                    <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Research & Development">
+                     <div class="card-content">
+                        <h3>Research & Development</h3>
+                        <p>Being non official spokesperson of the cooprative movement in kerala, the state cooperative union constituted a research wing in the head office to assess the impact of its function...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+             <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>About Us</h3>
+                        <p>STATE CO-OPERATIVE UNION, KERALA, established by Government of Kerala, as per section 89 of Kerala Co-operative Societies Act 1969, came into existence in 1970...</p>
+                    </div>
+                </div>
+                 <div class="card">
+                    <div class="chairman-card-content">
+                        <img src="/static/images/chairman.jpg" alt="Our Chairman" class="chairman-photo">
+                        <div>
+                            <h3>Our Chairman</h3>
+                            <p><strong>Shri N Koliakode Krishnan Nair</strong></p>
+                            <p>Our esteemed chairman, leading the way for a better cooperative future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+{% endblock %}

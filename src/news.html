@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}News - STATE CO-OPERATIVE UNION, KERALA{% endblock %}
+
+{% block head %}
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 3rem;
+            color: #343a40;
+            margin-bottom: 3rem;
+        }
+
+        .featured-article {
+            display: flex;
+            gap: 2rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .featured-article img {
+            max-width: 100%;
+            flex-grow: 1;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .featured-content {
+            flex-basis: 0;
+            flex-grow: 1.5; /* Give more space to text */
+        }
+
+        .featured-content h2 {
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-card-content {
+            padding: 1.5rem;
+        }
+
+        .news-card h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="page-title">Latest News & Updates</h1>
+
+        <div class="featured-article">
+            <img src="https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Featured News">
+            <div class="featured-content">
+                <p><strong>EDUCATION</strong></p>
+                <h2>HDC&BM 2025-2026 Final List Published</h2>
+                <p>The final selected list for the Higher Diploma in Co-operation & Business Management for the academic year 2025-2026 has been published. All selected candidates are requested to check the list and complete the admission formalities before the deadline.</p>
+                <a href="#" class="read-more">Read Full Story &rarr;</a>
+            </div>
+        </div>
+
+        <div class="news-grid">
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="News 1">
+                <div class="news-card-content">
+                    <h3>New Training Programs for Employees</h3>
+                    <p>The State Co-operative Union is excited to announce a new series of training programs for employees across all districts...</p>
+                    <a href="#" class="read-more">Learn More</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="News 2">
+                <div class="news-card-content">
+                    <h3>2025 Exam Results Announced</h3>
+                    <p>The results for the 2025 co-operative examinations have been officially released. Check your results now on the official portal...</p>
+                    <a href="#" class="read-more">Check Results</a>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="News 3">
+                <div class="news-card-content">
+                    <h3>Celebrating 50 Years of Excellence</h3>
+                    <p>Join us in celebrating five decades of service to the co-operative movement in Kerala. A series of events and celebrations are planned...</p>
+                    <a href="#" class-="read-more">Discover Events</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
